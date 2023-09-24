@@ -93,6 +93,8 @@ def main():
 	elif mode == '2':
 		decrypt = morse_decrypt(text)
 		print("Text : ",decrypt)
-
+	else:
+		print("not a valid mode")
+		return 1
 if __name__ == "__main__":
 	main()
