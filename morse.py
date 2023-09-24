@@ -70,6 +70,7 @@ def morse_decrypt(text):
 	decryptkey = {v: k for k, v in morsekey.items()}
 	decryptkey["/"] = " "
 	decrypt = ""
+	text = text.replace("-","_")
 	for word in text.split():
 		if word not in decryptkey:
 			decrypt = decrypt + "#"
