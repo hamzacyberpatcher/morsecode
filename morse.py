@@ -64,7 +64,7 @@ def morse_encrypt(text):
 			print("Cannot translate the character : ",c)
 			return 1
 		encrypt = encrypt + morsekey[c] + " "
-	return encrypt
+	return encrypt.replace("_","-")
 
 def morse_decrypt(text):
 	decryptkey = {v: k for k, v in morsekey.items()}
