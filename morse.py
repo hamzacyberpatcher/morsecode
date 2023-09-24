@@ -75,7 +75,7 @@ def morse_decrypt(text):
 			decrypt = decrypt + "#"
 			continue
 		decrypt = decrypt + decryptkey[word]
-	return decrypt
+	return decrypt.upper()
 
 def main():
 	if len(sys.argv) != 3:
