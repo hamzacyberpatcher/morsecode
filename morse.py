@@ -82,7 +82,7 @@ def main():
 	if len(sys.argv) != 3:
 		print("Usage : morse.py <mode> <text>")
 		print("mode: 1 for encryption and 2 for decryption")
-		print("Note: Enclose the text within ()")
+		print('Note: Enclose the text within ""')
 		return 1
 	mode = sys.argv[1]
 	text = sys.argv[2]
